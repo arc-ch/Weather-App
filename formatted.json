@@ -1,0 +1,43 @@
+{
+    "coord": {
+      "lon": 85.8333,
+      "lat": 20.2333
+    },
+    "weather": [
+      {
+        "id": 721,
+        "main": "Haze",
+        "description": "haze",
+        "icon": "50d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 309.27,
+      "feels_like": 316.27,
+      "temp_min": 307.03,
+      "temp_max": 309.27,
+      "pressure": 1003,
+      "humidity": 52
+    },
+    "visibility": 4500,
+    "wind": {
+      "speed": 5.14,
+      "deg": 180
+    },
+    "clouds": {
+      "all": 40
+    },
+    "dt": 1716030499,
+    "sys": {
+      "type": 1,
+      "id": 9113,
+      "country": "IN",
+      "sunrise": 1715989156,
+      "sunset": 1716036430
+    },
+    "timezone": 19800,
+    "id": 1275817,
+    "name": "Bhubaneswar",
+    "cod": 200
+  }

@@ -1,0 +1,35 @@
+
+
+FLOW OF EXECUTION:
+https://www.mermaidchart.com/raw/d4c03ca9-58a9-47d6-bf5a-547aa48bf5bd?theme=light&version=v0.1&format=svg
+
+
+1. Start and Initialization:
+        Initialize variables and add event listeners to the tabs.
+        
+2. Tab Switching Logic:
+        When switching tabs, determine the current and new tab states.
+        If switching to the "Search Weather" tab, hide user weather info and grant access container, and show the search form.
+        If switching to the "User Weather" tab, hide the search form, and either show the grant access container
+        (if coordinates are not available) or fetch weather info using stored coordinates.
+
+3. Check Session Storage:
+        Check if user coordinates are available in session storage.
+        If found, fetch weather info.
+        If not found, show the grant access container.
+
+4. Grant Location Access:
+        On clicking the grant access button, attempt to get the user's location.
+        Save the coordinates to session storage and fetch weather info.
+
+5. Fetch User Weather Info:
+        Make an API call to fetch weather information based on the user's coordinates.
+        Show the loading screen while fetching data.
+        Render the fetched weather info and display it on the UI.
+
+6. Search Weather by City:
+
+        On form submission, validate the input city name.
+        If valid, fetch weather info based on the city name.
+        Show the loading screen while fetching data.
+        Render the fetched weather info and display it on the UI.
